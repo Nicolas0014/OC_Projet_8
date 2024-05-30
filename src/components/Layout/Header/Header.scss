@@ -1,14 +1,21 @@
 @import '../../../_base.scss';
 
 header {
+    position: fixed;
+    z-index: 10;
     height: fit-content;
     width: 100%;
-    background-color: $primary-color;
-    @include shadowed;
-    @include flex-centered;
-    @include text_type_1;
+    background-color: $secondary-color;
 
-    .title-header {
-        padding: 1rem;
+    @include shadowed;
+
+    nav {
+
+        .icon-burger {
+            font-size: 36px;
+            color: white;
+            text-align: center;
+        }
     }
+
 }

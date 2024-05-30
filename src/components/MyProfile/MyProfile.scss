@@ -14,8 +14,7 @@
     align-items: center;
     justify-content: space-between;
     width: 60%;
-
-    @include text_type_1;
+    @include text_type_2;
   }
   
   .intro-text {
@@ -23,12 +22,11 @@
   }
   
   .highlight {
-    // color: #1E90FF;
-    color: #004080;
+    color: $secondary-color;
   }
 
   .typed-style {
-    color: #004080;
+    color: $secondary-color;
   }
   
   .intro-photo img {

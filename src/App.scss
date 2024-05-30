@@ -20,8 +20,12 @@ a {
     color: #000;
 }
 
+.main-title {
+    @include main_title;
+}
+
 .title-category {
-    @include text_type_2;
+    @include text_type_1;
 }
 
 

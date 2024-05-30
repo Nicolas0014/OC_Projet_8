@@ -18,8 +18,10 @@
     "react-dom": "^18.2.0",
     "react-helmet": "^6.1.0",
     "react-i18next": "^12.3.1",
+    "react-modal": "^3.16.1",
     "react-router-dom": "^6.11.1",
     "react-router-hash-link": "^2.4.3",
+    "react-typed": "^2.0.12",
     "sass": "^1.58.3"
   },
   "devDependencies": {
@@ -28,7 +30,6 @@
     "@types/react-router-hash-link": "^2.4.6",
     "@vitejs/plugin-react": "^3.1.0",
     "autoprefixer": "^10.4.15",
-    "eslint": "^8.35.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-prettier": "^8.7.0",
     "eslint-plugin-import": "^2.27.5",
@@ -36,8 +37,7 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "postcss": "^8.4.29",
-    "prettier": "^2.8.4",
+    "postcss": "^8.4.38",
     "vite": "^4.1.0"
   }
 }

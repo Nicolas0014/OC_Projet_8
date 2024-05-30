@@ -9,7 +9,7 @@ export default function ProjectModal({ project, closeModal }) {
   const [activeSection, setActiveSection] = useState('issues');
 
   const handleIconClick = (section) => {
-    setActiveSection(section === activeSection ? null : section);
+    setActiveSection(section);
   };
 
   return (
@@ -29,8 +29,8 @@ export default function ProjectModal({ project, closeModal }) {
           <div className='project-details-block'>
             <div className="project-icons">
               <FontAwesomeIcon className='icon-1' icon={faExclamation} onClick={() => handleIconClick('issues')}/>
-              <FontAwesomeIcon className='icon-2' icon={faLink} onClick={() => handleIconClick('github')}/>
               <FontAwesomeIcon className='icon-3' icon={faGraduationCap} onClick={() => handleIconClick('skills')}/>
+              <FontAwesomeIcon className='icon-2' icon={faLink} onClick={() => handleIconClick('links')}/>
             </div>
             {activeSection === 'issues' && (
               <div className="project-details">
@@ -41,18 +41,23 @@ export default function ProjectModal({ project, closeModal }) {
             {activeSection === 'skills' && (
               <div className="project-details">
                 <h3>Compétences développées</h3>
-                <p>{project.skills}</p>
+                <p>{project.developped_skills}</p>
               </div>
             )}
-            {activeSection === 'github' && (
+            {activeSection === 'links' && (
               <div className="project-details">
                 <h3>Liens vers le repo Github</h3>
-                <a href={project.github} target="_blank" rel="noopener noreferrer">
+                <a href={project.github_link} target="_blank" rel="noopener noreferrer">
                   Voir sur Github
                 </a>
               </div>
             )}
             </div>
+        </div>
+        <div className="project-modal-galery">
+          {project.galery.map((img) => (
+            <img src={img} alt="illustration" />
+          ))}
         </div>
       </Modal>
     </section>

@@ -1,6 +1,8 @@
 // Variables globales
-$primary-color: #e87722;
-$secondary-color: #485fc7;
+$primary-color: #FFA500;
+$primary-color-lighted: #FFA50080;
+$secondary-color: #004080;
+$secondary-color-lighted: #00408080;
 $tertiary-color: #ffffff;
 $primary-font: "Oswald";
 
@@ -30,6 +32,14 @@ $breakpoints: (
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+@mixin absolute-centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 90%;
+}
+
 @mixin flex-centered {
   display: flex;
   justify-content: center;
@@ -42,18 +52,24 @@ $breakpoints: (
   align-items: center;
 }
 
-@mixin text_type_1 {
-  font-size: 1.5rem;
+@mixin main_title {
+  font-size: 2.75rem;
   font-weight: 700;
-  color: $tertiary-color;
+  margin-bottom: 1.5rem;
+}
+
+@mixin text_type_1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: $secondary-color;
 }
 
 @mixin text_type_2 {
-  font-size: 1.75rem;
-  padding-left: 1rem;
-  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: white;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 @mixin text_type_3 {

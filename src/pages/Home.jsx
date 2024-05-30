@@ -1,4 +1,6 @@
 import HelmetMeta from '@components/Helmet/HelmetMeta';
+import MyProfile from '@components/MyProfile/MyProfile';
+import ProjectGallery from '@components/ProjectGallery/ProjectGallery';
 
 export default function Home() {
   const title = '';
@@ -7,6 +9,8 @@ export default function Home() {
   return (
     <main>
       <HelmetMeta title={title} description={description} />
+      <MyProfile />
+      <ProjectGallery />
     </main>
   );
 }
