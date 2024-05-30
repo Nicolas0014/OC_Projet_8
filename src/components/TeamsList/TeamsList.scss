@@ -1,0 +1,16 @@
+@import '../../_base.scss';
+
+.teams-list {
+    padding: 0.5rem;
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
+        grid-row-gap: 1rem;
+
+        .team-card {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "teamID": "EU_1"
+    },
+    {
+        "id": 2,
+        "teamID": "EU_2"
+    },
+    {
+        "id": 3,
+        "teamID": "EU_3"
+    },
+    {
+        "id": 4,
+        "teamID": "EU_4"
+    },
+    {
+        "id": 5,
+        "teamID": "NA_1"
+    },
+    {
+        "id": 6,
+        "teamID": "NA_2"
+    },
+    {
+        "id": 7,
+        "teamID": "NA_3"
+    },
+    {
+        "id": 8,
+        "teamID": "NA_4"
+    },
+    {
+        "id": 9,
+        "teamID": "OCE_1"
+    },
+    {
+        "id": 10,
+        "teamID": "OCE_2"
+    },
+    {
+        "id": 11,
+        "teamID": "SAM_1"
+    },
+    {
+        "id": 12,
+        "teamID": "SAM_2"
+    },
+    {
+        "id": 13,
+        "teamID": "MENA_1"
+    },
+    {
+        "id": 14,
+        "teamID": "MENA_2"
+    },
+    {
+        "id": 15,
+        "teamID": "APAC_1"
+    },
+    {
+        "id": 16,
+        "teamID": "SSA_1"
+    }
+]

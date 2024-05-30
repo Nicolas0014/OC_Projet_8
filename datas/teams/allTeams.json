@@ -1,0 +1,117 @@
+[
+    {
+        "region": "EU",
+        "teams": [
+            {
+                "teamID": "EU_1",
+                "name": "Karmine Corp",
+                "logo": "src/assets/images/teamsLogo/100x100/EU/KarmineCorp.webp"
+            },
+            {
+                "teamID": "EU_2",
+                "name": "Team Vitality",
+                "logo": "src/assets/images/teamsLogo/100x100/EU/VitalityDark.webp"
+            },
+            {
+                "teamID": "EU_3",
+                "name": "Team BDS",
+                "logo": "src/assets/images/teamsLogo/100x100/EU/BDS.webp"
+            },
+            {
+                "teamID": "EU_4",
+                "name": "Gentle Mates Alpine",
+                "logo": "src/assets/images/teamsLogo/100x100/EU/GentleMates.webp"
+            }
+        ]
+    },
+    {
+        "region": "NA",
+        "teams": [
+            {
+                "teamID": "NA_1",
+                "name": "G2 Stride",
+                "logo": "src/assets/images/teamsLogo/100x100/NA/G2.webp"
+            },
+            {
+                "teamID": "NA_2",
+                "name": "Gen.G Mobil1 Racing",
+                "logo": "src/assets/images/teamsLogo/100x100/NA/GENG.webp"
+            },
+            {
+                "teamID": "NA_3",
+                "name": "Luminosity Gaming",
+                "logo": "src/assets/images/teamsLogo/100x100/NA/Luminosity.webp"
+            },
+            {
+                "teamID": "NA_4",
+                "name": "OG",
+                "logo": "src/assets/images/teamsLogo/100x100/NA/OG.webp"
+            }
+        ]
+    },
+    {
+        "region": "OCE",
+        "teams": [
+            {
+                "teamID": "OCE_1",
+                "name": "PWR",
+                "logo": "src/assets/images/teamsLogo/100x100/OCE/PWR.webp"
+            },
+            {
+                "teamID": "OCE_2",
+                "name": "QuikTrip Pioneers Gaming",
+                "logo": "src/assets/images/teamsLogo/100x100/OCE/Pioneers.webp"
+            }
+        ]
+    },
+    {
+        "region": "SAM",
+        "teams": [
+            {
+                "teamID": "SAM_1",
+                "name": "FURIA Esports",
+                "logo": "src/assets/images/teamsLogo/100x100/SAM/Furia.webp"
+            },
+            {
+                "teamID": "SAM_2",
+                "name": "Complexity Gaming",
+                "logo": "src/assets/images/teamsLogo/100x100/SAM/Complexity.webp"
+            }
+        ]
+    },
+    {
+        "region": "MENA",
+        "teams": [
+            {
+                "teamID": "MENA_1",
+                "name": "Team Falcons",
+                "logo": "src/assets/images/teamsLogo/100x100/MENA/Falcons.webp"
+            },
+            {
+                "teamID": "MENA_2",
+                "name": "Rule One",
+                "logo": "src/assets/images/teamsLogo/100x100/MENA/RuleOne.webp"
+            }
+        ]
+    },
+    {
+        "region": "APAC",
+        "teams": [
+            {
+                "teamID": "APAC_1",
+                "name": "Elevate",
+                "logo": "src/assets/images/teamsLogo/100x100/APAC/Elevate.webp"
+            }
+        ]
+    },
+    {
+        "region": "SSA",
+        "teams": [
+            {
+                "teamID": "SSA_1",
+                "name": "Limitless",
+                "logo": "src/assets/images/teamsLogo/100x100/SSA/Limitless.webp"
+            }
+        ]
+    }
+]

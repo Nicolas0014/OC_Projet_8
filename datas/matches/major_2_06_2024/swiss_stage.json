@@ -1,0 +1,102 @@
+[
+    {
+        "id": 1,
+        "teamA_id": "teamA_1",
+        "teamB_id": "teamB_1",
+        "scoreA": 2,
+        "scoreB": 1,
+        "expiring_bets_time": "2024-05-01T12:00:00Z",
+        "beginning_time": "2024-04-30T18:00:00Z",
+        "state": "finished"
+    },
+    {
+        "id": 2,
+        "teamA_id": "teamA_2",
+        "teamB_id": "teamB_2",
+        "scoreA": 0,
+        "scoreB": 0,
+        "expiring_bets_time": "2024-05-02T10:00:00Z",
+        "beginning_time": "2024-05-01T14:00:00Z",
+        "state": "upcoming"
+    },
+    {
+        "id": 3,
+        "teamA_id": "teamA_3",
+        "teamB_id": "teamB_3",
+        "scoreA": null,
+        "scoreB": null,
+        "expiring_bets_time": "2024-05-03T15:00:00Z",
+        "beginning_time": "2024-05-02T20:00:00Z",
+        "state": "upcoming"
+    },
+    {
+        "id": 4,
+        "teamA_id": "teamA_4",
+        "teamB_id": "teamB_4",
+        "scoreA": null,
+        "scoreB": null,
+        "expiring_bets_time": "2024-05-04T08:00:00Z",
+        "beginning_time": "2024-05-03T13:00:00Z",
+        "state": "upcoming"
+    },
+    {
+        "id": 5,
+        "teamA_id": "teamA_5",
+        "teamB_id": "teamB_5",
+        "scoreA": null,
+        "scoreB": null,
+        "expiring_bets_time": "2024-05-05T19:00:00Z",
+        "beginning_time": "2024-05-04T16:00:00Z",
+        "state": "upcoming"
+    },
+    {
+        "id": 6,
+        "teamA_id": "teamA_6",
+        "teamB_id": "teamB_6",
+        "scoreA": null,
+        "scoreB": null,
+        "expiring_bets_time": "2024-05-06T11:00:00Z",
+        "beginning_time": "2024-05-05T17:00:00Z",
+        "state": "upcoming"
+    },
+    {
+        "id": 7,
+        "teamA_id": "teamA_7",
+        "teamB_id": "teamB_7",
+        "scoreA": null,
+        "scoreB": null,
+        "expiring_bets_time": "2024-05-07T14:00:00Z",
+        "beginning_time": "2024-05-06T19:00:00Z",
+        "state": "upcoming"
+    },
+    {
+        "id": 8,
+        "teamA_id": "teamA_8",
+        "teamB_id": "teamB_8",
+        "scoreA": null,
+        "scoreB": null,
+        "expiring_bets_time": "2024-05-08T16:00:00Z",
+        "beginning_time": "2024-05-07T12:00:00Z",
+        "state": "upcoming"
+    },
+    {
+        "id": 9,
+        "teamA_id": "teamA_9",
+        "teamB_id": "teamB_9",
+        "scoreA": null,
+        "scoreB": null,
+        "expiring_bets_time": "2024-05-09T18:00:00Z",
+        "beginning_time": "2024-05-08T14:00:00Z",
+        "state": "upcoming"
+    },
+    {
+        "id": 10,
+        "teamA_id": "teamA_10",
+        "teamB_id": "teamB_10",
+        "scoreA": null,
+        "scoreB": null,
+        "expiring_bets_time": "2024-05-10T20:00:00Z",
+        "beginning_time": "2024-05-09T16:00:00Z",
+        "state": "upcoming"
+    }
+]

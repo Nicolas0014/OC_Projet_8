@@ -1,0 +1,8 @@
+node_modules/
+figma/
+dist/
+build/
+.vscode/
+.idea/
+*.log
+.env

@@ -1,0 +1,63 @@
+// Variables globales
+$primary-color: #e87722;
+$secondary-color: #485fc7;
+$tertiary-color: #ffffff;
+$primary-font: "Oswald";
+
+// BreackPoint
+$breakpoints: (
+  "base": 900px,
+  "phone-down": 500px,
+  "tablet-up": 768px,
+  "tablet-down": 900px,
+  "desktop-up": 1024px,
+  "desktop-down": 1280px,
+  "widescreen-up": 1440px,
+  "custom-phone": 360px,
+);
+
+// Média
+@mixin media-min($_key) {
+  @media screen and (min-width: map_get($breakpoints, $_key)) {
+    & {
+      @content;
+    }
+  }
+}
+
+
+@mixin shadowed {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@mixin flex-centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@mixin text_type_1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: $tertiary-color;
+}
+
+@mixin text_type_2 {
+  font-size: 1.75rem;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+@mixin text_type_3 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: $tertiary-color;
+}

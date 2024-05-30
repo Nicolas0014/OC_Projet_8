@@ -1,0 +1,106 @@
+.project-modal {
+    position: absolute;
+    width: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+    .close-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: none;
+        border: none;
+        font-size: 2.5rem;
+        cursor: pointer;
+        color: #004080; // Bleu profond
+    } 
+
+    h2 {
+        color: #004080; // Bleu profond
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .project-modal-content {
+        display: flex;
+        justify-content: space-between;
+
+        .project-description {
+            flex: 1;
+            padding: 20px;
+            background-color: #ffa50080;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+
+        .project-details-block {
+            flex: 1;
+
+            .project-icons {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 180px;
+                height: 180px;
+                position: relative;
+                margin: auto;
+            }
+                
+            .project-icons > * {
+                background-color: #FFA500; // Orange
+                color: white;
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 8px;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+                position: absolute;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
+                &.icon-1 {
+                    top: 0;
+                }
+
+                &.icon-2 {
+                    bottom: 0;
+                    left: 0;
+                }
+
+                &.icon-3 {
+                    bottom: 0;
+                    right: 0;
+                }
+            }
+
+            .project-details {
+                flex: 1;
+                padding: 20px;
+                background-color: #00408080;
+                border-radius: 10px;
+                margin-top: 20px;
+
+                h3 {
+                    color: #004080; // Bleu profond
+                    margin-bottom: 10px;
+                }
+            
+                p, a {
+                    color: #333;
+                }
+            }
+        }
+    }
+}

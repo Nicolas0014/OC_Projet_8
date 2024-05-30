@@ -1,0 +1,40 @@
+@import '../../../_base.scss';
+
+footer {
+    height: fit-content;
+    padding: 1rem 2rem;
+    width: 100%;
+    background-color: $primary-color;
+    @include shadowed;
+    @include flex-centered;
+
+    .footer-links-list {
+        width: 100%;
+        @include flex-around;
+        gap: 1rem;
+
+        .item {
+
+            &.active {
+                @include shadowed;
+                padding: 0.5rem 1.2rem;
+                background-color: $secondary-color;
+                border-radius: 20px;
+            }
+
+            a {
+                @include flex-centered;
+                gap: 0.5rem;
+                @include text_type_3;
+
+                .description {
+                    display: none;
+
+                    &.active {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,37 @@
+@import '../../_base.scss';
+
+.intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-size: cover;
+    color: #fff;
+    text-align: left;
+  
+  .intro-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+
+    @include text_type_1;
+  }
+  
+  .intro-text {
+    flex: 1;
+  }
+  
+  .highlight {
+    // color: #1E90FF;
+    color: #004080;
+  }
+
+  .typed-style {
+    color: #004080;
+  }
+  
+  .intro-photo img {
+    border-radius: 50%;
+  }
+}
