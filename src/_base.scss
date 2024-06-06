@@ -77,3 +77,9 @@ $breakpoints: (
   color: white;
   font-weight: 700;
 }
+
+@mixin text_type_3 ($color) {
+  font-size: 1.25rem;
+  color: $color;
+  font-weight: 400;
+}

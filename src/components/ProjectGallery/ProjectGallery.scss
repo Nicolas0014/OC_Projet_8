@@ -10,21 +10,27 @@
 }
 
 .filter-buttons {
+  display: flex;
+  gap: 1rem;
+  margin: auto;
+  width: fit-content;
   margin-bottom: 20px;
 
-  button {
+  .filter-button {
     background-color: $primary-color;
     color: white;
     border: none;
     padding: 10px 20px;
-    margin: 0 5px;
     cursor: pointer;
     border-radius: 20px;
     transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
-    &:hover {
+    &:hover, &.active {
       background-color: $secondary-color; 
     }
+
+     
   }
 }
 

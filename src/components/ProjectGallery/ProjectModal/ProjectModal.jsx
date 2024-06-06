@@ -20,6 +20,12 @@ export default function ProjectModal({ project, closeModal }) {
     setActiveSection(section);
   };
 
+  const icons = [
+    { section: 'issues', icon: faExclamation, label: 'Problématiques' },
+    { section: 'skills', icon: faGraduationCap, label: 'Compétences' },
+    { section: 'links', icon: faLink, label: 'Liens' },
+  ];
+
   return (
     <Modal
       isOpen={!!project}
@@ -29,44 +35,51 @@ export default function ProjectModal({ project, closeModal }) {
       overlayClassName="project-modal-overlay"
     >
     <FontAwesomeIcon className='close-button' icon={faXmark} onClick={closeModal} />
-    <h2>{project.title}</h2>
-    <div className="project-modal-content">
-      <div className="project-description">
-        <p>{project.description}</p>
+    <h2 className='title-category'>{project.title}</h2>
+    <div className="project-modal-full-content">
+      <div className="project-modal-summary">
+        <div className="project-description">
+          <p>{project.description}</p>
+        </div>
+        <div className='project-details-block'>
+          <div className="project-icons">
+            {icons.map(({ section, icon, label }) => (
+              <div
+                key={section}
+                className={`project-icon ${activeSection === section ? 'active' : ''}`}
+                onClick={() => handleIconClick(section)}
+              >
+              <FontAwesomeIcon className='icon' icon={icon} onClick={() => handleIconClick(section)}/>
+              <span className="description">{label}</span>
+              </div>
+            ))}
+          </div>
+          {activeSection === 'issues' && (
+            <div className="project-details">
+              <h3>Problématiques rencontrées et résolution</h3>
+              <p>{project.issues}</p>
+            </div>
+          )}
+          {activeSection === 'skills' && (
+            <div className="project-details">
+              <h3>Compétences développées</h3>
+              <p>{project.developped_skills}</p>
+            </div>
+          )}
+          {activeSection === 'links' && (
+            <div className="project-details">
+              <h3>Liens vers le repo Github</h3>
+              <Link href={project.github_link} target="_blank" rel="noopener noreferrer">
+                Voir sur Github
+              </Link>
+            </div>
+          )}
+          </div>
       </div>
-      <div className='project-details-block'>
-        <div className="project-icons">
-          <FontAwesomeIcon className='icon-1' icon={faExclamation} onClick={() => handleIconClick('issues')}/>
-          <FontAwesomeIcon className='icon-3' icon={faGraduationCap} onClick={() => handleIconClick('skills')}/>
-          <FontAwesomeIcon className='icon-2' icon={faLink} onClick={() => handleIconClick('links')}/>
-        </div>
-        {activeSection === 'issues' && (
-          <div className="project-details">
-            <h3>Problématiques rencontrées et résolution</h3>
-            <p>{project.issues}</p>
-          </div>
-        )}
-        {activeSection === 'skills' && (
-          <div className="project-details">
-            <h3>Compétences développées</h3>
-            <p>{project.developped_skills}</p>
-          </div>
-        )}
-        {activeSection === 'links' && (
-          <div className="project-details">
-            <h3>Liens vers le repo Github</h3>
-            <Link href={project.github_link} target="_blank" rel="noopener noreferrer">
-              Voir sur Github
-            </Link>
-          </div>
-        )}
-        </div>
+      {/* <div className="project-modal-galery">
+        <img src={project.background} alt="illustration" />
+      </div> */}
     </div>
-    {/* <div className="project-modal-galery">
-      {project.galery.map((img) => (
-        <img key={index} src={img} alt="illustration" />
-      ))}
-    </div> */}
   </Modal>
   );
 }
