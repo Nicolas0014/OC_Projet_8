@@ -4,11 +4,11 @@ import ProjectModal from './ProjectModal/ProjectModal';
 
 // ASSETS
 import './ProjectGallery.scss';
-import imgProject_Booki from '@assets/images/illustrations_projets/Booki/illustration_1.png';
-import imgProject_MonVieuxGrimoire from '@assets/images/illustrations_projets/MonVieuxGrimoire/illustration_1.png';
-import imgProject_NinaCarducci from '@assets/images/illustrations_projets/NinaCarducci/illustration_1.png';
-import imgProject_Kasa from '@assets/images/illustrations_projets/Kasa/illustration_1.png';
-import imgProject_SophieBluel from '@assets/images/illustrations_projets/SophieBluel/illustration_1.png';
+import imgProject_Booki from '@assets/images/illustrations_projets/Booki_1.webp';
+import imgProject_MonVieuxGrimoire from '@assets/images/illustrations_projets/MonVieuxGrimoire_1.webp';
+import imgProject_NinaCarducci from '@assets/images/illustrations_projets/NinaCarducci_1.webp';
+import imgProject_Kasa from '@assets/images/illustrations_projets/Kasa_1.webp';
+import imgProject_SophieBluel from '@assets/images/illustrations_projets/SophieBluel_1.webp';
 
 import { useState } from 'react';
 
