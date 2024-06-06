@@ -11,7 +11,7 @@ footer {
     .footer-links-list {
         width: 100%;
         @include flex-around;
-        gap: 1rem;
+        gap: rem;
 
         .item {
 
@@ -25,7 +25,6 @@ footer {
             a {
                 @include flex-centered;
                 gap: 0.5rem;
-                @include text_type_3;
 
                 .description {
                     display: none;

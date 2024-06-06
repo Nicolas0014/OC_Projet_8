@@ -13,25 +13,33 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 4rem;
     width: 60%;
-
-    @include text_type_1;
+    @include text_type_2;
   }
   
   .intro-text {
+    text-align: justify;
     flex: 1;
   }
   
   .highlight {
-    // color: #1E90FF;
-    color: #004080;
+    color: $secondary-color;
   }
 
   .typed-style {
-    color: #004080;
+    color: $secondary-color;
   }
   
-  .intro-photo img {
-    border-radius: 50%;
+  .intro-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+    img {
+      width: 350px;
+      border-radius: 50%;
+    }
   }
 }

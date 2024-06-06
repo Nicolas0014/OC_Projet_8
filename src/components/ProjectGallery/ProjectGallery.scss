@@ -1,32 +1,40 @@
+@import '../../_base.scss';
+
 .project-gallery {
-    height: 100vh;
-    padding: 20px;
-    text-align: center;
+  padding-block: 20px;
+  text-align: center;
+
+  h2 {
+    @include text_type_1;
   }
-  
-  .filter-buttons {
-    margin-bottom: 20px;
-  }
-  
-  .project-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-  }
-  
-  .project-card {
-    width: 200px;
-    margin: 10px;
+}
+
+.filter-buttons {
+  margin-bottom: 20px;
+
+  button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $secondary-color; 
+    }
   }
+}
+
+.project-cards {
+  display: flex;
+  row-gap: 4rem;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
   
-  .project-card:hover {
-    transform: scale(1.05);
-  }
-  
-  .project-card img {
-    width: 100%;
-    height: auto;
-  }
   

@@ -11,20 +11,20 @@ export default function Footer() {
         {
             id: 'footer-link-1',
             icon: faFutbol,
-            description: 'Matchs',
-            url: '/matches',
+            description: 'Mon Profil',
+            url: '#myprofile',
         },
         {
             id: 'footer-link-2',
             icon: faRankingStar,
-            description: 'Classement',
-            url: '/leaderboard',
+            description: 'Mes Projets',
+            url: '#myprojects',
         },
         {
             id: 'footer-link-3',
             icon: faUser,
-            description: 'Compte',
-            url: '/account',
+            description: 'Mes coordonnées',
+            url: '#mycontact',
         }
     ]        
 
@@ -32,10 +32,9 @@ export default function Footer() {
         <footer>
             <ul className='footer-links-list'>
                 {linksList.map((link) => (
-                    <li key={link.id} className={`item ${location.pathname === link.url ? 'active' : ''}`}>
+                    <li key={link.id}>
                         <NavLink to={link.url}>
-                            <FontAwesomeIcon icon={link.icon}/>
-                            <p className={`description ${location.pathname === link.url ? 'active' : ''}`}>{link.description}</p>
+                            <p className="description">{link.description}</p>
                         </NavLink>
                     </li>
                 ))}
