@@ -7,20 +7,40 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom-left-radius: 50px;
-    border-top-right-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    overflow: hidden;
 
     &:hover {
         transform: scale(1.05);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
     }
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 100%;
+        background: linear-gradient(120deg, $primary-color, $primary-color-lighted);
+        z-index: 1;
+        transition: left 0.5s ease;
+      }
+    
+      &:hover::before {
+        left: 0;
+      }
+    
 
     img {
         width: 100%;
         height: auto;
+        object-fit: cover;
     }
 
     h3 {
@@ -28,5 +48,6 @@
         color: white;
         font-weight: 500;
         font-size: 1.5rem;
+        z-index: 2;
     }
 }

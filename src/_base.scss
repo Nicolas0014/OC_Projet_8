@@ -1,8 +1,8 @@
 // Variables globales
-$primary-color: #FFA500;
-$primary-color-lighted: #FFA50080;
-$secondary-color: #004080;
-$secondary-color-lighted: #00408080;
+$primary-color: #000431;
+$primary-color-lighted: #00043180;
+$secondary-color: #FFBC00;
+$secondary-color-lighted: #FFBC0080;
 $tertiary-color: #ffffff;
 $primary-font: "Oswald";
 
@@ -52,6 +52,12 @@ $breakpoints: (
   align-items: center;
 }
 
+@mixin flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
 @mixin main_title {
   font-size: 2.75rem;
   font-weight: 700;
@@ -70,10 +76,4 @@ $breakpoints: (
   font-size: 1.5rem;
   color: white;
   font-weight: 700;
-}
-
-@mixin text_type_3 {
-  font-size: 1rem;
-  font-weight: 400;
-  color: $tertiary-color;
 }

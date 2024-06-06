@@ -1,13 +1,31 @@
 @import '../../_base.scss';
 
 .project-gallery {
-  height: 100vh;
   padding-block: 20px;
   text-align: center;
+
+  h2 {
+    @include text_type_1;
+  }
 }
 
 .filter-buttons {
   margin-bottom: 20px;
+
+  button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $secondary-color; 
+    }
+  }
 }
 
 .project-cards {
@@ -15,7 +33,7 @@
   row-gap: 4rem;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
   

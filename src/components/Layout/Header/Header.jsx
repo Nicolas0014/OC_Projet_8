@@ -1,40 +1,45 @@
 // HOOKS
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 // ASSETS
 import './Header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFutbol, faRankingStar, faUser, faBars } from '@fortawesome/free-solid-svg-icons';
+import { faUser, faFolderOpen, faGear, faAddressCard } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
 
     const linksList = [
         {
             id: 'header-link-1',
-            icon: faFutbol,
+            icon: faUser,
             description: 'Mon Profil',
             url: '#myprofile',
         },
         {
             id: 'header-link-2',
-            icon: faRankingStar,
+            icon: faGear,
+            description: 'Technos & Outils',
+            url: '#mytechs',
+        },
+        {
+            id: 'header-link-3',
+            icon: faFolderOpen,
             description: 'Mes Projets',
             url: '#myprojects',
         },
         {
-            id: 'header-link-3',
-            icon: faUser,
+            id: 'header-link-4',
+            icon: faAddressCard,
             description: 'Mes coordonnées',
             url: '#mycontact',
         }
     ]        
 
-    const [isNavOpen, setIsNavOpen] = useState(false);
+    // const [isNavOpen, setIsNavOpen] = useState(false);
 
-    const handleNav = () => {
-        setIsNavOpen(!isNavOpen);
-    };
+    // const handleNav = () => {
+    //     setIsNavOpen(!isNavOpen);
+    // };
 
     return (
         <header>
@@ -42,10 +47,10 @@ export default function Header() {
                 <ul className='header-links-list'>
                     {linksList.map((link) => (
                         <li key={link.id} className="item">
-                            <NavLink to={link.url}>
+                            <HashLink to={link.url}>
                                 <FontAwesomeIcon icon={link.icon}/>
                                 <p className="description">{link.description}</p>
-                            </NavLink>
+                            </HashLink>
                         </li>
                     ))}
                 </ul>

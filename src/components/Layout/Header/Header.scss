@@ -11,6 +11,24 @@ header {
 
     nav {
 
+        .header-links-list {
+            @include flex-end;
+            width: 90%;
+            margin: auto;
+            gap: 5rem;
+            padding-left: 0;
+    
+            .item {
+                padding-block: 1rem;
+
+                a {
+                    @include flex-centered;
+                    gap: 0.5rem;
+                    color: white;
+                }
+            }
+        }
+
         .icon-burger {
             font-size: 36px;
             color: white;
@@ -18,4 +36,15 @@ header {
         }
     }
 
+}
+
+@import '../../../_base.scss';
+
+footer {
+    height: fit-content;
+    padding: 1rem 2rem;
+    width: 100%;
+    background-color: $primary-color;
+    @include shadowed;
+    @include flex-centered;
 }
