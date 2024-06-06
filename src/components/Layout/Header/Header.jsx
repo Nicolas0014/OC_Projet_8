@@ -48,7 +48,7 @@ export default function Header() {
                     {linksList.map((link) => (
                         <li key={link.id} className="item">
                             <HashLink to={link.url}>
-                                <FontAwesomeIcon icon={link.icon}/>
+                                <FontAwesomeIcon className='icon' icon={link.icon}/>
                                 <p className="description">{link.description}</p>
                             </HashLink>
                         </li>

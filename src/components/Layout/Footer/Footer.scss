@@ -11,29 +11,12 @@ footer {
     .footer-links-list {
         width: 100%;
         @include flex-around;
-        gap: rem;
 
         .item {
-
-            &.active {
-                @include shadowed;
-                padding: 0.5rem 1.2rem;
-                background-color: $secondary-color;
-                border-radius: 20px;
-            }
-
-            a {
-                @include flex-centered;
-                gap: 0.5rem;
-
-                .description {
-                    display: none;
-
-                    &.active {
-                        display: block;
-                    }
-                }
-            }
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
         }
     }
 }

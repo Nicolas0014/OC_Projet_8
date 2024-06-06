@@ -1,41 +1,35 @@
 import './Footer.scss';
-import { NavLink, useLocation } from 'react-router-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFutbol, faRankingStar, faUser} from '@fortawesome/free-solid-svg-icons';
+import { faPhone, faEnvelope, faHouse } from '@fortawesome/free-solid-svg-icons';
 
 export default function Footer() {
 
-    const location = useLocation();
-
-    const linksList = [
+    const contactInfos = [
         {
             id: 'footer-link-1',
-            icon: faFutbol,
-            description: 'Mon Profil',
-            url: '#myprofile',
+            icon: faPhone,
+            description: '+33 7 12 30 14 75',
         },
         {
             id: 'footer-link-2',
-            icon: faRankingStar,
-            description: 'Mes Projets',
-            url: '#myprojects',
+            icon: faEnvelope,
+            description: 'charbonnier.nicolas@outlook.fr',
         },
         {
             id: 'footer-link-3',
-            icon: faUser,
-            description: 'Mes coordonnées',
-            url: '#mycontact',
+            icon: faHouse,
+            description: '64100 Bayonne',
         }
     ]        
 
     return (
-        <footer>
+        <footer id="mycontact">
             <ul className='footer-links-list'>
-                {linksList.map((link) => (
-                    <li key={link.id}>
-                        <NavLink to={link.url}>
-                            <p className="description">{link.description}</p>
-                        </NavLink>
+                {contactInfos.map((info) => (
+                    <li className='item' key={info.id}>
+                        <FontAwesomeIcon className='icon' icon={info.icon}/>
+                        <span>{info.description}</span>
                     </li>
                 ))}
             </ul>

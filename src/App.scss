@@ -28,6 +28,10 @@ a {
     @include text_type_1;
 }
 
+.icon {
+    font-size: $icon-size;
+}
+
 .App {
     scroll-snap-type: y mandatory;
     overflow-y: scroll;

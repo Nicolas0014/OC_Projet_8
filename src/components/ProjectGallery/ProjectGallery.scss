@@ -1,7 +1,9 @@
 @import '../../_base.scss';
 
 .project-gallery {
-  padding-block: 20px;
+  padding-top: 56px;
+  padding-bottom: 2rem;
+  margin-top: -56px;
   text-align: center;
 
   h2 {
@@ -29,8 +31,6 @@
     &:hover, &.active {
       background-color: $secondary-color; 
     }
-
-     
   }
 }
 
