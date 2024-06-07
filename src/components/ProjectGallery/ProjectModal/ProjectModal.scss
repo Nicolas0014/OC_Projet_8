@@ -15,10 +15,34 @@
 
     .project-modal {
     position: absolute;
-    width: 80%;
+    width: 95%;
     max-width: 1000px;
     max-height: 70vh;
     overflow-y: scroll;
+    scrollbar-width: thin; /* for Firefox */
+    scrollbar-color: #888 #f1f1f1; /* for Firefox */
+
+    /* For Chrome, Edge, and Safari */
+    &::-webkit-scrollbar {
+        width: 122px; /* Width of the scrollbar */
+    }
+  
+    /* The track (background) */
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1; /* Track color */
+        border-radius: 100px; /* Rounded corners */
+    }
+  
+    /* The handle (scrollbar thumb) */
+    &::-webkit-scrollbar-thumb {
+        background: #888; /* Scrollbar color */
+        border-radius: 100px; /* Rounded corners */
+    }
+  
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+        background: #555; /* Color when hovered */
+    }
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -27,6 +51,11 @@
     border-radius: 20px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease-in-out;
+
+    @include media-min("tablet-down") {
+        width: 80%; 
+    }
+
 
     .close-button {
         position: absolute;
@@ -67,10 +96,14 @@
                 gap: 1rem;
 
                 .project-icons {
-                    width: 80%;
+                    width: 100%;
                     margin: auto;
                     display: grid;
                     grid-template-columns: repeat(4, 1fr);
+
+                    @include media-min('tablet-down') {
+                        width: 80%;
+                    }
           
                     .project-icon {
                         display: flex;
@@ -127,8 +160,12 @@
                     margin-bottom: 10px;
                 }
 
-                p {
+                p, a {
                     @include text_type_3 (black);
+                }
+
+                a {
+                    text-decoration: underline;
                 }
             
             }

@@ -3,7 +3,6 @@
 .mytechs {
     width: 100%;
     padding-top: 56px;
-    margin-top: -56px;
     overflow: hidden;
     background: $secondary-color;
     
@@ -23,7 +22,11 @@
             .scroller__inner {
                 width: fit-content;
                 flex-wrap: nowrap;
-                animation: scroll 20s linear infinite;
+                animation: scrollMobile 20s linear infinite;
+
+                @include media-min('phone-down') {
+                    animation: scroll 20s linear infinite;
+                }
             }
         }
     
@@ -31,16 +34,15 @@
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
-            gap: 4rem;
+            gap: 2rem;
             padding-block: 2rem;
+
+            @include media-min('phone-down') {
+                gap: 4rem;
+            }
         }
     }
-  }
-  
-  @keyframes scroll {
-    to {
-        transform: translate(calc(-50% - 2rem));
-    }
 }
+
 
   

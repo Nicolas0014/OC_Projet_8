@@ -43,18 +43,18 @@ export default function ProjectGallery({}) {
       galery: [
       ],
       category: 1,
-      github_link: '',
+      github_link: 'https://github.com/Nicolas0014/OpenClassRoom_Project2',
     },
     {
       title: 'Créez une page web dynamique avec JavaScript',
       description: 'Ce projet consistait à utiliser JavaScript en communiquant avec une API afin de créer une page web dynamique pour une architecture d’intérieur. Le back-end était déjà en place et il fallait gérer le site de la page de connexion jusqu’à l’intégration d’une modale permettant d’uploader de nouveaux médias qui s’affichaient dynamiquement dans la galerie.',
-      issues: '',
+      issues: 'J\'ai rencontré un problème lors du post de projets dans la base de données avec une erreur 500 ou des refresh de pages. Après avoir posté mon problème sur Slack, j\'ai pu découvrir qu\'il y avait une "interférence" entre le back et "open with live server". La modification de dossier rafraichissait VSCode et donc le front. J\'ai pu remédier au problème en ouvrants deux fenêtres de VSCode, front et back séparés.',
       developped_skills: 'Pour la première fois j’ai déployé une architecture JavaScript modulaire et ai manipulé des classes. J’ai aussi appris à gérer des évènements utilisateurs pour récupérer des informations ou pour mettre à jour le DOM.',
       background: imgProject_SophieBluel,
       galery: [
       ],
       category: 1,
-      github_link: '',
+      github_link: 'https://github.com/Nicolas0014/OpenClassRoom_Project3',
     },
     {
       title: 'Débuggez et optimisez un site de photographe',
@@ -65,7 +65,7 @@ export default function ProjectGallery({}) {
       galery: [
       ],
       category: 3,
-      github_link: '',
+      github_link: 'https://github.com/Nicolas0014/OC_Projet_5',
     },
     {
       title: 'Créez une application web de location immobilière avec React',
@@ -76,7 +76,7 @@ export default function ProjectGallery({}) {
       galery: [
       ],
       category: 1,
-      github_link: '',
+      github_link: 'https://github.com/Nicolas0014/OpenClassRoom_Projet_6',
     },
     {
       title: 'Développez le back-end d’un site de notation de livres',
@@ -87,7 +87,7 @@ export default function ProjectGallery({}) {
       galery: [
       ],
       category: 2,
-      github_link: '',
+      github_link: 'https://github.com/Nicolas0014/OC_Projet_7',
     },
   ];
 

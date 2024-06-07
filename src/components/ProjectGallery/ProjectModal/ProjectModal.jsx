@@ -1,7 +1,7 @@
 // HOOKS
 import { useState } from 'react';
 import Modal from 'react-modal';
-import { Link } from 'react-router-dom';
+import useWindowSize from '@components/Hooks/useWindowSize';
 
 // ASSETS
 import './ProjectModal.scss';
@@ -12,7 +12,9 @@ Modal.setAppElement('#root');
 
 export default function ProjectModal({ project, closeModal }) {
 
-  if (!project) return null;
+  const { width } = useWindowSize();
+
+  const isMobile = width < 768;
 
   const [activeSection, setActiveSection] = useState('issues');
 
@@ -25,6 +27,8 @@ export default function ProjectModal({ project, closeModal }) {
     { section: 'skills', icon: faGraduationCap, label: 'Compétences' },
     { section: 'links', icon: faLink, label: 'Liens' },
   ];
+
+  if (!project) return null;
 
   return (
     <Modal
@@ -50,7 +54,7 @@ export default function ProjectModal({ project, closeModal }) {
                 onClick={() => handleIconClick(section)}
               >
               <FontAwesomeIcon className='icon' icon={icon} onClick={() => handleIconClick(section)}/>
-              <span className="description">{label}</span>
+              {!isMobile && <span className="description">{label}</span>}
               </div>
             ))}
           </div>
@@ -68,10 +72,10 @@ export default function ProjectModal({ project, closeModal }) {
           )}
           {activeSection === 'links' && (
             <div className="project-details">
-              <h3>Liens vers le repo Github</h3>
-              <Link href={project.github_link} target="_blank" rel="noopener noreferrer">
+              <h3>Lien vers le repo Github</h3>
+              <a href={project.github_link} target="_blank" rel="noopener noreferrer">
                 Voir sur Github
-              </Link>
+              </a>
             </div>
           )}
           </div>

@@ -9,8 +9,20 @@ footer {
     @include flex-centered;
 
     .footer-links-list {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        @include flex-around;
+        gap: 1rem;
+        padding-block: 1rem;
+        padding-left: 2rem;
+
+        @include media-min('phone-down') {
+            @include flex-around;
+            flex-direction: row;
+            gap: 0;
+            padding-block: 0;
+            padding-left: 0;
+        }
 
         .item {
             display: flex;

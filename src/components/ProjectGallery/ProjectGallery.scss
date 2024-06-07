@@ -12,6 +12,8 @@
 
 .filter-buttons {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1rem;
   margin: auto;
   width: fit-content;
@@ -26,6 +28,13 @@
     border-radius: 20px;
     transition: background-color 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 40%;
+    width: 40%;
+
+    @include media-min('phone-down') {
+      max-width: unset;
+      width: unset;
+    }
 
     &:hover, &.active {
       background-color: $secondary-color; 

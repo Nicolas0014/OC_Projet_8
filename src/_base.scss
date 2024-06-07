@@ -5,7 +5,7 @@ $secondary-color: #FFBC00;
 $secondary-color-lighted: #FFBC0080;
 $tertiary-color: #ffffff;
 $primary-font: "Oswald";
-$icon-size: 20px;
+$icon-size: 26px;
 
 // BreackPoint
 $breakpoints: (
@@ -60,27 +60,60 @@ $breakpoints: (
 }
 
 @mixin main_title {
-  font-size: 2.75rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
+
+  @include media-min('desktop-down') {
+    font-size: 2.75rem;
+  }
 }
 
 @mixin text_type_1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   font-weight: 700;
   color: $secondary-color;
+
+  @include media-min('phone-down') {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+  }
+
+  @include media-min('desktop-down') {
+    font-size: 2rem;
+  }
 }
 
 @mixin text_type_2 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: white;
   font-weight: 700;
+
+  @include media-min('desktop-down') {
+    font-size: 1.5rem;
+  }
 }
 
 @mixin text_type_3 ($color) {
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: $color;
   font-weight: 400;
+
+  @include media-min('desktop-down') {
+    font-size: 1.25rem;
+  }
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 2rem));
+  }
+}
+
+@keyframes scrollMobile {
+  to {
+    transform: translate(calc(-50% - 1rem));
+  }
 }
