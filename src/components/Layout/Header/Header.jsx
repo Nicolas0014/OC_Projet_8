@@ -8,6 +8,9 @@ import './Header.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faFolderOpen, faGear, faAddressCard, faBars } from '@fortawesome/free-solid-svg-icons';
 
+// COMPONENTS 
+import ToggleMobile from '@components/Layout/Header/ToggleMobile/ToggleMobile.jsx'; 
+
 export default function Header() {
 
     const { width } = useWindowSize();
@@ -70,7 +73,7 @@ export default function Header() {
                     linksListMobile.map((link) => (
                         <li key={link.id} className="item">
                         <HashLink to={link.url}>
-                            <FontAwesomeIcon className='icon' icon={link.icon}/>
+                            <FontAwesomeIcon onClick={link.onClick}className='icon' icon={link.icon}/>
                             <p className="description">{link.description}</p>
                         </HashLink>
                         </li>
@@ -97,6 +100,7 @@ export default function Header() {
                     ))}
                 </nav>
             )}
+            <ToggleMobile linksList={linksList} isNavOpen={isNavOpen} handleNav={handleNav}/>
         </header>
     );
 }
