@@ -9,31 +9,26 @@ footer {
     @include flex-centered;
 
     .footer-links-list {
+        display: flex;
+        flex-direction: column;
         width: 100%;
-        @include flex-around;
-        gap: rem;
+        gap: 1rem;
+        padding-block: 1rem;
+        padding-left: 2rem;
+
+        @include media-min('phone-down') {
+            @include flex-around;
+            flex-direction: row;
+            gap: 0;
+            padding-block: 0;
+            padding-left: 0;
+        }
 
         .item {
-
-            &.active {
-                @include shadowed;
-                padding: 0.5rem 1.2rem;
-                background-color: $secondary-color;
-                border-radius: 20px;
-            }
-
-            a {
-                @include flex-centered;
-                gap: 0.5rem;
-
-                .description {
-                    display: none;
-
-                    &.active {
-                        display: block;
-                    }
-                }
-            }
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: white;
         }
     }
 }

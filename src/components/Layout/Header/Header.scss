@@ -3,7 +3,7 @@
 header {
     position: fixed;
     z-index: 10;
-    height: fit-content;
+    height: 56px;
     width: 100%;
     background-color: $secondary-color;
 
@@ -17,6 +17,10 @@ header {
             margin: auto;
             gap: 5rem;
             padding-left: 0;
+
+            &.mobile {
+                justify-content: center;
+            }
     
             .item {
                 padding-block: 1rem;

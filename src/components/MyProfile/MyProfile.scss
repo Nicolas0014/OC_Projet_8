@@ -4,42 +4,69 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: auto;
     background-size: cover;
     color: #fff;
     text-align: left;
-  
-  .intro-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4rem;
-    width: 60%;
-    @include text_type_2;
-  }
-  
-  .intro-text {
-    text-align: justify;
-    flex: 1;
-  }
-  
-  .highlight {
-    color: $secondary-color;
-  }
+    position: relative;
 
-  .typed-style {
-    color: $secondary-color;
-  }
-  
-  .intro-photo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    @include media-min('phone-down') {
+      height: 100vh;
+    }
+
+    .intro-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      width: 90%;
+      max-width: 1200px;
+      padding-top: 56px;
+      padding-bottom: 2rem;
+      @include text_type_2;
+
+      @include media-min('phone-down') {
+        padding-top: 0;
+        padding-bottom: 0;
+        gap: 4rem;
+      }
+
+      @include media-min('tablet-down') {
+        flex-direction: row;
+      }
+    }
     
-    img {
-      width: 350px;
-      border-radius: 50%;
+    .intro-text {
+      text-align: left;
+      flex: 1;
+    }
+    
+    .highlight {
+      color: $secondary-color;
+    }
+
+    .typed-style {
+      color: $secondary-color;
+    }
+    
+    .intro-photo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      
+      img {
+        width: 250px;
+        border-radius: 50%;
+
+        @include media-min('desktop-down') {
+          width: 300px;
+        }
+
+        @include media-min('desktop-down') {
+          width: 350px;
+        }
+      }
     }
   }
-}
