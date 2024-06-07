@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Layout>
           <Routes>
-            <Route path="/" element={<Home />} />           
+            <Route path="/OC_Projet_8" element={<Home />} />           
             <Route path="*" element={<Page404 />} />
           </Routes>
         </Layout>
